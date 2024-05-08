@@ -1,0 +1,1 @@
+/home/ros2/manipulation_ws/build/manipulation_description/ament_cmake_core/manipulation_descriptionConfig-version.cmake

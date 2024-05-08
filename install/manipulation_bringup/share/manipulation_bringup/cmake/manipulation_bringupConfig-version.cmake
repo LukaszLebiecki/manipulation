@@ -1,0 +1,1 @@
+/home/ros2/manipulation_ws/build/manipulation_bringup/ament_cmake_core/manipulation_bringupConfig-version.cmake

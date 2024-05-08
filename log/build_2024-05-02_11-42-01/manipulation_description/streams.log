@@ -1,0 +1,55 @@
+[0.009s] Invoking command in '/home/ros2/manipulation_ws/build/manipulation_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/bookros2_ws/install/launch_pal:/home/ros2/bookros2_ws/install/br2_fsm_bumpgo_py:/opt/ros/humble /usr/bin/cmake --build /home/ros2/manipulation_ws/build/manipulation_description -- -j16 -l16
+[0.020s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.086s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.126s] -- Configuring done
+[0.127s] -- Generating done
+[0.127s] -- Build files have been written to: /home/ros2/manipulation_ws/build/manipulation_description
+[0.137s] Invoked command in '/home/ros2/manipulation_ws/build/manipulation_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/bookros2_ws/install/launch_pal:/home/ros2/bookros2_ws/install/br2_fsm_bumpgo_py:/opt/ros/humble /usr/bin/cmake --build /home/ros2/manipulation_ws/build/manipulation_description -- -j16 -l16
+[0.153s] Invoking command in '/home/ros2/manipulation_ws/build/manipulation_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/bookros2_ws/install/launch_pal:/home/ros2/bookros2_ws/install/br2_fsm_bumpgo_py:/opt/ros/humble /usr/bin/cmake --install /home/ros2/manipulation_ws/build/manipulation_description
+[0.157s] -- Install configuration: ""
+[0.157s] -- Execute custom install script
+[0.157s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf2/moveo_urdf.xacro
+[0.161s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf2/moveo_urdf_new.urdf
+[0.165s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf2/moveo_urdf_og.urdf
+[0.169s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//launch/display_launch.xml
+[0.169s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//rviz/urdf_config.rviz
+[0.169s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Gripper_Idol_Gear.STL
+[0.173s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Gripper_Idol_Gear_col.STL
+[0.177s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Gripper_Servo_Gear.STL
+[0.181s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Gripper_Servo_Gear_col.STL
+[0.185s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_1.STL
+[0.189s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_1_col.STL
+[0.192s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_2.STL
+[0.196s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_2_col.STL
+[0.200s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_3.STL
+[0.204s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_3_col.STL
+[0.208s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_4.STL
+[0.211s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_4_col.STL
+[0.215s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_5.STL
+[0.219s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Link_5_col.STL
+[0.223s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Pivot_Arm_Gripper_Idol.STL
+[0.227s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Pivot_Arm_Gripper_Idol_col.STL
+[0.231s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Pivot_Arm_Gripper_Servo.STL
+[0.235s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Pivot_Arm_Gripper_Servo_col.STL
+[0.239s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Tip_Gripper_Idol.STL
+[0.242s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Tip_Gripper_Idol_col.STL
+[0.246s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Tip_Gripper_Servo.STL
+[0.250s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/Tip_Gripper_Servo_col.STL
+[0.253s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/base_link.STL
+[0.257s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//meshes2/base_link_col.STL
+[0.260s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/ament_index/resource_index/package_run_dependencies/manipulation_description
+[0.260s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/ament_index/resource_index/parent_prefix_path/manipulation_description
+[0.260s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/ament_prefix_path.sh
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/ament_prefix_path.dsv
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/path.sh
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/path.dsv
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.bash
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.sh
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.zsh
+[0.261s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.dsv
+[0.261s] -- Symlinking: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/package.dsv
+[0.265s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/ament_index/resource_index/packages/manipulation_description
+[0.265s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/cmake/manipulation_descriptionConfig.cmake
+[0.265s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/cmake/manipulation_descriptionConfig-version.cmake
+[0.265s] -- Up-to-date symlink: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/package.xml
+[0.266s] Invoked command in '/home/ros2/manipulation_ws/build/manipulation_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/bookros2_ws/install/launch_pal:/home/ros2/bookros2_ws/install/br2_fsm_bumpgo_py:/opt/ros/humble /usr/bin/cmake --install /home/ros2/manipulation_ws/build/manipulation_description

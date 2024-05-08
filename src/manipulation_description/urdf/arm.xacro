@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <link name="base_footprint" />
+
+    <link name="arm_base_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/base_link.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/base_link.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+            <mass
+              value="5" />
+            <inertia
+              ixx="${1*0.0796437064139586}"
+              ixy="${1*-1.35807816685381E-07}"
+              ixz="${1*3.16441218494544E-06}"
+              iyy="${1*0.0796383423261766}"
+              iyz="${1*0.000125066867569525}"
+              izz="${1*0.153453766842238}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link0_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link0.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+            <material name="black" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link0.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />            
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+            <mass
+              value="2" />
+            <inertia
+              ixx="${1*5.94829545708689E-05}"
+              ixy="${1*-1.38396838427451E-08}"
+              ixz="${1*0.000236581332428518}"
+              iyy="${1*0.00772725923039858}"
+              iyz="${1*5.49261711838682E-09}"
+              izz="${1*0.00774092887972647}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link1_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 -0.46" />
+            <material name="black" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 -0.46" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 -0.46" />
+            <mass
+              value="1" />
+            <inertia
+              ixx="${1*0.00353227137515841}"
+              ixy="${1*9.696639397941E-06}"
+              ixz="${1*0.00297171917890993}"
+              iyy="${1*0.0074634181349595}"
+              iyz="${1*-1.00852639929973E-06}"
+              izz="${1*0.0080464620891467}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link2_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+            <mass
+              value="0.5" />
+            <inertia
+              ixx="${1*0.012176}"
+              ixy="${1*-2.6636E-05}"
+              ixz="${1*-4.6349E-07}"
+              iyy="${1*0.00060347}"
+              iyz="${1*-0.00013766}"
+              izz="${1*0.011573}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link3_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link3.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+            <material name="orange" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link3.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+            <mass
+              value="0.1" />
+            <inertia
+              ixx="${1*0.000542025469135715}"
+              ixy="${1*-1.13899929472064E-05}"
+              ixz="${1*-2.51651442756918E-07}"
+              iyy="${1*0.000253426581911029}"
+              iyz="${1*-1.51961207048325E-05}"
+              izz="${1*0.000289498592185195}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link4_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link4.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+            <material name="orange" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link4.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+            <mass
+              value="0.065268" />
+            <inertia
+              ixx="${1*4.43E-05}"
+              ixy="${1*-1.9291E-06}"
+              ixz="${1*5.7823E-05}"
+              iyy="${1*0.00012329}"
+              iyz="${1*1.4718E-06}"
+              izz="${1*7.9091E-05}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link5_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link5.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+            <material name="black" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link5.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi/2}" />
+            <mass
+              value="0.016415" />
+            <inertia
+              ixx="${1*3.7602E-05}"
+              ixy="${1*-5.5077E-07}"
+              ixz="${1*9.5822E-09}"
+              iyy="${1*2.0116E-05}"
+              iyz="${1*3.0426E-07}"
+              izz="${1*1.7521E-05}" />
+        </inertial>
+    </link>
+
+    <link name="arm_link6_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link6.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi*1.015}" />
+            <material name="black" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/link6.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 ${pi*1.015}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 ${pi*1.015}" />
+            <mass
+              value="0.0064418" />
+            <inertia
+              ixx="${1*1.6924E-05}"
+              ixy="${1*-3.1692E-06}"
+              ixz="${1*6.6553E-07}"
+              iyy="${1*1.3455E-06}"
+              iyz="${1*2.861E-06}"
+              izz="${1*1.7067E-05}" />
+        </inertial>
+    </link>
+
+    <link name="arm_gear1_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/gear1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/gear1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <mass
+              value="0.000048785" />
+            <inertia
+                ixx="0"
+                ixy="0"
+                ixz="0"
+                iyy="0"
+                iyz="0"
+                izz="0" />
+        </inertial>
+    </link>
+
+    <link name="arm_gear2_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/gear2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="-${pi/2} 0 ${pi}" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/gear2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="-${pi/2} 0 ${pi}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="-${pi/2} 0 ${pi}" />
+            <mass
+              value="0.0000500318588067354" />
+            <inertia
+                ixx="0"
+                ixy="0"
+                ixz="0"
+                iyy="0"
+                iyz="0"
+                izz="0" />
+        </inertial>
+    </link>
+
+    <link name="arm_pinza1_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pinza1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0.385 0" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pinza1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0.385 0" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0.385 0" />
+            <mass
+              value="0.000104910711600225" />
+            <inertia
+                ixx="0"
+                ixy="0"
+                ixz="0"
+                iyy="0"
+                iyz="0"
+                izz="0" />
+        </inertial>
+    </link>
+
+    <link name="arm_pinza2_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pinza2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="-${pi/2} 0.4 ${pi}" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pinza2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="-${pi/2} 0.4 ${pi}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="-${pi/2} 0.4 ${pi}" />
+            <mass
+              value="0.000104910911949307" />
+            <inertia
+                ixx="0"
+                ixy="0"
+                ixz="0"
+                iyy="0"
+                iyz="0"
+                izz="0" />
+        </inertial>
+    </link>
+
+    <link name="arm_pivot1_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pivot1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pivot1.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <mass
+              value="0.0000001" />
+            <inertia
+                ixx="0"
+                ixy="0"
+                ixz="0"
+                iyy="0"
+                iyz="0"
+                izz="0" />
+        </inertial>
+    </link>
+
+    <link name="arm_pivot2_link">
+        <visual>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pivot2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi}" />
+            <material name="red" />
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file:///home/ros2/manipulation_ws/src/manipulation_description/meshes/pivot2.STL" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi}" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 ${pi}" />
+            <mass
+              value="0.0000001" />
+            <inertia
+              ixx="0"
+              ixy="0"
+              ixz="0"
+              iyy="0"
+              iyz="0"
+              izz="0" />
+        </inertial>
+    </link>
+
+
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="arm_base_link" />
+        <origin xyz="0 0 0.116" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_link0_joint" type="fixed">
+        <parent link="arm_base_link" />
+        <child link="arm_link0_link" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="axis1_joint" type="revolute">
+        <parent link="arm_link0_link" />
+        <child link="arm_link1_link" />
+        <origin xyz="0 0 0.0665" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-${pi/4}" upper="${pi/4}" effort="5" velocity="1"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="axis2_joint" type="revolute">
+        <parent link="arm_link1_link" />
+        <child link="arm_link2_link" />
+        <origin xyz="0 0 0.145" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-${pi/2}" upper="${pi/2}" effort="5" velocity="1"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="axis3_joint" type="revolute">
+        <parent link="arm_link2_link" />
+        <child link="arm_link3_link" />
+        <origin xyz="0 0 0.221" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-${pi/1.6}" upper="${pi/1.6}" effort="5" velocity="1"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="axis4_joint" type="revolute">
+        <parent link="arm_link3_link" />
+        <child link="arm_link4_link" />
+        <origin xyz="0 0 0.129" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-${pi/2}" upper="${pi/2}" effort="5" velocity="1"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="axis5_joint" type="revolute">
+        <parent link="arm_link4_link" />
+        <child link="arm_link5_link" />
+        <origin xyz="0 0 0.095" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-${pi/2}" upper="${pi/2}" effort="5" velocity="1"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="link5_link6_joint" type="fixed">
+        <parent link="arm_link5_link" />
+        <child link="arm_link6_link" />
+        <origin xyz="0 0.001 0.041" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="axis6_joint" type="revolute">
+        <parent link="arm_link6_link" />
+        <child link="arm_gear1_link" />
+        <origin xyz="-0.014 -0.003 0.024" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="0" upper="${pi/2}" effort="5" velocity="1"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="gear2_joint" type="revolute">
+        <parent link="arm_link6_link" />
+        <child link="arm_gear2_link" />
+        <origin xyz="0.014 -0.003 0.024" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="0" upper="-${pi/2}" effort="5" velocity="1"/>
+        <mimic joint="axis6_joint" multiplier="-1" offset="0"/>
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="joint_pinza1" type="continuous">
+        <parent link="arm_gear1_link" />
+        <child link="arm_pinza1_link" />
+        <origin xyz="-0.04 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+		<limit lower="0" upper="-${pi/2}" effort="5" velocity="1"/>
+        <mimic joint="axis6_joint" multiplier="-1" offset="0"/> 
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="joint_pinza2" type="continuous">
+        <parent link="arm_gear2_link" />
+        <child link="arm_pinza2_link" />
+        <origin xyz="0.04 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+		<limit lower="0" upper="-${pi/2}" effort="5" velocity="1"/>
+        <mimic joint="axis6_joint" multiplier="1" offset="0"/> 
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="joint_pivot1" type="continuous">
+        <parent link="arm_link6_link" />
+        <child link="arm_pivot1_link" />
+        <origin xyz="-0.007 -0.003 0.044" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+		<limit lower="0" upper="-${pi/2}" effort="5" velocity="1"/>
+        <mimic joint="axis6_joint" multiplier="1" offset="0"/> 
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <joint name="joint_pivot2" type="continuous">
+        <parent link="arm_link6_link" />
+        <child link="arm_pivot2_link" />
+        <origin xyz="0.007 0.003 0.044" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+		<limit lower="0" upper="-${pi/2}" effort="5" velocity="1"/>
+        <mimic joint="axis6_joint" multiplier="-1" offset="0"/> 
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint> 
+
+
+</robot>

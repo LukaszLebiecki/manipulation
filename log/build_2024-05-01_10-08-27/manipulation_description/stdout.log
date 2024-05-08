@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf/manipulation.urdf.xacro
+-- Installing: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf/arm.xacro
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//urdf/common_properties.xacro
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//launch
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//launch/display_launch.xml
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description//rviz
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/ament_index/resource_index/package_run_dependencies/manipulation_description
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/ament_index/resource_index/parent_prefix_path/manipulation_description
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/path.sh
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/environment/path.dsv
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.bash
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.sh
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.zsh
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/local_setup.dsv
+-- Installing: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/package.dsv
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/ament_index/resource_index/packages/manipulation_description
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/cmake/manipulation_descriptionConfig.cmake
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/cmake/manipulation_descriptionConfig-version.cmake
+-- Up-to-date: /home/ros2/manipulation_ws/install/manipulation_description/share/manipulation_description/package.xml
