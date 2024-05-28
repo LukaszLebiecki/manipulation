@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "urdf" "launch" "rviz" "meshes" "DESTINATION" "share/manipulation_description/")
-ament_cmake_symlink_install_directory("/home/ros2/manipulation_ws/src/manipulation_description" DIRECTORY "urdf" "launch" "rviz" "meshes" "DESTINATION" "share/manipulation_description/")
+# install(DIRECTORY "urdf" "launch" "rviz" "meshes" "models" "DESTINATION" "share/manipulation_description/")
+ament_cmake_symlink_install_directory("/home/ros2/manipulation_ws/src/manipulation_description" DIRECTORY "urdf" "launch" "rviz" "meshes" "models" "DESTINATION" "share/manipulation_description/")
 
 # install(FILES "/home/ros2/manipulation_ws/build/manipulation_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulation_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ros2/manipulation_ws/src/manipulation_description" FILES "/home/ros2/manipulation_ws/build/manipulation_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulation_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

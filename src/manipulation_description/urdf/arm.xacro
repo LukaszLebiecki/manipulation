@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <xacro:macro name="default_transmission" params="number">
+        <transmission name="transmission_${number}">
+            <plugin>transmission_interface/SimpleTransmission</plugin>
+            <actuator name="motor_${number}" role="actuator1" />
+            <joint name="axis${number}_joint" role="joint1">
+                <mechanical_reduction>1.0</mechanical_reduction>
+            </joint>
+        </transmission>
+    </xacro:macro>
+    
 
     <link name="base_footprint" />
 
@@ -520,5 +530,11 @@
         <dynamics friction="0.05" damping="0.1"/>
     </joint> 
 
+    <xacro:default_transmission number="1"/>
+    <xacro:default_transmission number="2"/>
+    <xacro:default_transmission number="3"/>
+    <xacro:default_transmission number="4"/>
+    <xacro:default_transmission number="5"/>
+    <xacro:default_transmission number="6"/>
 
 </robot>

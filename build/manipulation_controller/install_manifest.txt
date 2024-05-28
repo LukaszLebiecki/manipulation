@@ -1,0 +1,17 @@
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/config/manipulation_controllers.yaml
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/launch/controller.launch.py
+/home/ros2/manipulation_ws/install/manipulation_controller/share/ament_index/resource_index/package_run_dependencies/manipulation_controller
+/home/ros2/manipulation_ws/install/manipulation_controller/share/ament_index/resource_index/parent_prefix_path/manipulation_controller
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/environment/ament_prefix_path.sh
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/environment/ament_prefix_path.dsv
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/environment/path.sh
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/environment/path.dsv
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/local_setup.bash
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/local_setup.sh
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/local_setup.zsh
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/local_setup.dsv
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/package.dsv
+/home/ros2/manipulation_ws/install/manipulation_controller/share/ament_index/resource_index/packages/manipulation_controller
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/cmake/manipulation_controllerConfig.cmake
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/cmake/manipulation_controllerConfig-version.cmake
+/home/ros2/manipulation_ws/install/manipulation_controller/share/manipulation_controller/package.xml
